@@ -1,0 +1,141 @@
+/* .continar1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.continar2 {
+  width: 250px;
+  height: 350px;
+  background-color: #123;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.continar2:hover .soshial i {
+  left: 10px;
+  visibility: visible;
+color: rgb(255, 255, 255);
+
+}
+
+.soshial {
+  width: 50px;
+  height: 300px;
+
+  font-size: 30px;
+  position: relative;
+  position: absolute;
+}
+.soshial i {
+  margin: 18px 0;
+  color: rgb(0, 0, 0);
+  transition: 0.5s ease-in-out;
+  position: absolute;
+   cursor: pointer;
+}
+
+.soshial i:nth-child(1) {
+  top: 10px;
+  visibility: hidden;
+  left: -70px;
+  transition: 0.4s ease-in-out;
+ 
+}
+
+.soshial i:nth-child(2) {
+  top: 70px;
+  visibility: hidden;
+  left: -100px;
+
+  transition: 0.5s ease-in-out;
+}
+.soshial i:nth-child(3) {
+  top: 130px;
+  visibility: hidden;
+  left: -140px;
+  transition: 0.6s ease-in-out;
+}
+.soshial i:nth-child(4) {
+  top: 190px;
+  visibility: hidden;
+  left: -170px;
+
+  transition: 0.7s ease-in-out;
+}
+.soshial i:nth-child(5) {
+  top: 250px;
+  visibility: hidden;
+  left: -200px;
+
+  transition: 0.8s ease-in-out;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+} */
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 30vh;
+  height: 30vh;
+  gap: 70px;
+  position: relative;
+  background-color: cadetblue;
+  margin: 300px  auto;
+  overflow: hidden;
+}
+
+.container .item {
+  width: 200px;
+  height: 200px;
+  background-color: deeppink;
+  background-blend-mode: color;
+  position: absolute;
+  top: 0;
+  left: -250px;
+  animation-name: style;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+
+ 
+}
+.container .item:nth-child(1){
+  left: -400px;
+
+  animation-delay: 1s;
+}
+.container .item:nth-child(2){
+  left: -400px;
+  background-color: aqua;
+animation-delay: 2s;
+}
+
+.container .item:nth-child(3){
+  top: 0;
+  left: -400px;
+background-color: burlywood;
+animation-delay: 3s;
+
+}
+
+@keyframes style{
+
+0%{
+transform: translatex(800px   );
+
+}
+
+50%{
+
+transition: 5s;
+
+}
+
+}
